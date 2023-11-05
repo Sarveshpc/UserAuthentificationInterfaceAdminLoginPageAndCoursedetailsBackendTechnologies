@@ -30,7 +30,7 @@ public class AdminUserController {
 	}
 	
 	@PostMapping("/saveAdminUser")
-	public String saveAdminUser(@RequestBody AdminAccount adminacco) {
+	public  String saveAdminUser(@RequestBody AdminAccount adminacco) {
 		
 			return AdminUserDao.saveAdminUser(adminacco);
 			
